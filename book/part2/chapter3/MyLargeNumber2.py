@@ -13,7 +13,7 @@ def Solution (n, m, k, data):
     second_number = data.pop()
 
     count = k * (k + 1 // m)
-    count += (count) % m
+    count += (k + 1 * k) % m
 
     answer += count * first_number
     answer += (m - count) * second_number
