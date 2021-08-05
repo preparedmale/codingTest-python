@@ -13,6 +13,7 @@ def Solution(n, direction):
     for direction in directions:
         answer[0] += direction_dic.get(direction)[0]
         answer[1] += direction_dic.get(direction)[1]
+
         if answer[0] > n:
             answer[0] -= 1
         elif answer[0] < 1:
